@@ -1,0 +1,60 @@
+.intro_wrap {
+	font-family: 'Russo One', sans-serif;
+	position: absolute; 
+    top:38%;
+    width:100%;
+    transition:all 1s linear;
+}
+svg text {
+    fill:rgba(72,138,204,1);
+	animation: stroke 5s  alternate;
+	stroke-width: 0;
+	font-size: 140px;
+	stroke: rgba(72,138,204,1);
+}
+.intro_btn{
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.bar{
+    transition:all 1s linear;
+    width: 100%;
+    height:0;
+    position: absolute;
+    background-color: #fff;
+    z-index: 101;
+}
+.top{
+    border-bottom:1px solid black;
+}
+.bottom{
+    border-top:1px solid black;
+    bottom:0;
+}
+.close_active{
+    animation: tongtong 5s  alternate;
+    height: 50%;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 1;
+	}
+}
+@keyframes tongtong{
+    0%{height:0}
+    50%{height:25%}
+    70%{height:50%}
+    75%{height:40%}
+    85%{height:50%}
+    95%{height:45%}
+    100%{height:50%}
+}

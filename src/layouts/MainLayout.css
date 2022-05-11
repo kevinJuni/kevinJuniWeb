@@ -1,0 +1,8 @@
+.brand_cus{
+    font-family: 'Russo One', sans-serif;
+    letter-spacing:2px;
+    color: rgba(72,138,204,1);
+    cursor: pointer;
+    font-size:20px;
+    font-weight: 900;
+}
